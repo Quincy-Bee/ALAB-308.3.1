@@ -15,3 +15,26 @@ for (let i = 1; i <= 100; i++) {
   }
 
 }
+
+/* part 2: Pprime time*/
+
+let n = 4;
+
+while (true) {
+
+  let isPrime = true;
+
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    console.log(n);
+    break;
+  }
+
+  n++;
+}
